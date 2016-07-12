@@ -1,1 +1,118 @@
-Hello World
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<!--
+Modified by Rory Donovan
+-->
+
+<html>
+	<head>
+		<title>Rory Donovan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<h1><a href="#">Rory Donovan</a></h1>
+					<p>Computational Biology Doctoral Candidate at <a href="http://www.compbio.cmu.edu">CMU/Pitt</a>:<br />
+					Systems Biology, Biophysics, and Machine Learning</p>
+					<ul class="actions">
+						<li><a href="#research" class="button icon fa-chevron-down scrolly">Research</a></li>
+					</ul>
+				</div>
+				<div class="image nophone"><div class="inner"><img src="images/headshot.jpg" alt="" /></div></div>
+			</header>
+
+		<!-- Two -->
+			<section id="research" class="wrapper">
+				<div class="inner alt">
+					<section class="spotlight">
+						<div class="image"><img src="images/we-data.png" alt="" /></div>
+						<div class="content">
+							<h3>Weighted Ensemble Systems Biology</h3>
+							<p>It can be really difficult to run stochastic models of biological processes enough times to accurately sample their output.  We applied the <a href="http://westpa.github.io/westpa/">WESTPA</a> implementation of weighted ensemble to these kinds of models and achieved orders of magnitude speed-ups in sampling.  The essential trick here is that most observables of interest in complex models are rare events (e.g state transitions), and weighted ensemble can efficiently sample rare events in stochastic systems.  Our <a href="pdfs/JCP-2013.pdf"><b>first paper</b></a> dealt with non-spatial models, and our <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004611"><b>second paper</b></a> addresses models of spatially resolved cellular processes.</p>
+							<ul>
+								<li>I built a <a href="http://weightedensemblizer.csb.pitt.edu"><b>web app</b></a> to help folks get started with our methods.</li>
+							</ul>
+
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/GM-3DMol.png" alt="" /></div>
+						<div class="content">
+							<h3>Graphical Models for Free Energy Estimation</h3>
+							<p>The main approaches to computationally estimating how strongly two biomolecules bind together are often either overly time consuming (e.g. molecular dynamics) or overly empirical (e.g. docking).  Alternatively, using graphical models of proteins to compute the Bethe free energy of binding can be both fast and accurate.  We are working to improve this approach and rigorously quantify the error involved in the approximation (work in progress).</p>
+							<ul>
+								<li>Here is a <a href="MRF_visualization_3dmol.html"><b>web app</b></a> to visualize the graphs induced on pdb structures.</li>
+							</ul>
+
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/atp-path.png" alt="" /></div>
+						<div class="content">
+							<h3>Quantitative Evolution and the ATP Synthase</h3>
+							<p>Using simple state-based models of proton transport and free energy transduction, we probe the optimality of the curiously engineered rotary mechanism of the ATP synthase.  We take a very high-level approach here; for instance, our models are entirely agnostic to structure, and we allow each potential transporter mechanism to optimize itself over all unknown parameters that are thermodynamically permissible (work in progress).</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/network.png" alt="" /></div>
+						<div class="content">
+							<h3>Network Inference with Graphical Models of Heterogeneous Genomic and Clinical Data</h3>
+							<p>We use graphical models to learn interaction networks between genes, clinical factors, and disease diagnoses.  Our models accommodate data that is both continuous and discrete, and are aggressively filtered for false-positive edges via collider detection algorithms.  Graphical models learned from biomedical data can be used for classification and biomarker selection (with performance comparable to currently available univariate tools), while revealing the underlying causal network structure and thus allowing for arbitrary likelihood queries over the data.  Our work is published in <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1039-0"><b>BMC Bioinformatics</b></a></p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/simulated_flu.png" alt="" /></div>
+						<div class="content">
+							<h3>Stochastic Models of Cellular Heterogeneity</h3>
+              <p>Simple stochastic models can recapitulate the population-level heterogeneity of protein abundance found in, for example, colonies of <i>e. coli</i>.  A non-spatial model of gene expression, stochastically simulated with a modified Gillespie algorithm that takes into account cell division, is able to reproduce experimental data quite well.  The <a href="https://github.com/donovanr/Stochastic_cell_division">simulation engine</a> for this project was my first foray into using <a href="http://julialang.org">Julia</a> for scientific computing.</p>
+						</div>
+					</section>
+				</div>
+			</section>
+
+
+		<!-- Two -->
+			<section id="about" class="wrapper style2 special">
+				<header class="major">
+					<h2>About</h2>
+					<p>I live in Pittsburgh. I work with <a href="http://www.csb.pitt.edu/Faculty/zuckerman/">Dan Zuckerman</a>, and collaborate with<br />
+					<a href="http://www.csb.pitt.edu/Faculty/Faeder/">Jim Faeder</a>, <a href="http://www.cs.cmu.edu/~cjl/">Chris Langmead</a>, <a href="http://staff.psc.edu/dittrich/">Markus Dittrich</a>, <a href="http://murphylab.web.cmu.edu">Bob Murphy</a>, and <a href="http://www.csb.pitt.edu/Faculty/benos/">Takis Benos</a>.
+					</p>
+				</header>
+				<ul class="icons labeled">
+					<li><a href="https://github.com/donovanr" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="http://scholar.google.com/citations?user=4TzE8Z8AAAAJ" class="icon fa-google"><span class="label">Google Scholar</span></a></li>
+					<li><a href="https://www.linkedin.com/in/rorymdonovan" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="pdfs/Rory-Resume.pdf" class="icon fa-file-o"><span class="label">CV</span></a></li>
+					<li><a href="mailto:donovanr@alumni.reed.edu" class="icon fa-send"><span class="label">Email</span></a></li>
+				</ul>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright"><a href="http://creativecommons.org/licenses/by/3.0/" class="icon fa-creative-commons"></a> Rory Donovan</p>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
