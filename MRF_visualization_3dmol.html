@@ -170,7 +170,7 @@
           <div class="input-group">
             <input type="text" class="form-control" id="pdbid" value="1L83">
             <span class="input-group-btn">
-              <button class="btn btn-default" type="submit" onclick="glviewer.removeAllSurfaces(); glviewer.clear(); m = $3Dmol.download('pdb:' + $('#pdbid').val(), glviewer, {}, function() {glviewer.setStyle({},{cartoon:{color: 'spectrum'}}); glviewer.addSurface($3Dmol.SurfaceType.VDW, {color: 'white','opacity':0.5}, {}); toggleCAGraph(8);toggleCAGraph(8); glviewer.render();}); ">Get New PDB</button>
+              <button class="btn btn-default" type="submit" onclick="glviewer.removeAllSurfaces(); glviewer.clear(); m = $3Dmol.download('pdb:' + $('#pdbid').val(), glviewer, {pdbUri:'https://www.rcsb.org/pdb/files/'}, function() {glviewer.setStyle({},{cartoon:{color: 'spectrum'}}); glviewer.addSurface($3Dmol.SurfaceType.VDW, {color: 'white','opacity':0.5}, {}); toggleCAGraph(8);toggleCAGraph(8); glviewer.render();}); ">Get New PDB</button>
             </span>
           </div>
         </div>
