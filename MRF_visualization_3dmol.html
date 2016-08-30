@@ -98,7 +98,7 @@
       $(document).ready(function() {
         var viewer = glviewer = $3Dmol.createViewer("gldiv");
         viewer.setBackgroundColor('white');
-        $3Dmol.download('pdb:1ubq',viewer, {}, function() {
+	$3Dmol.download('pdb:1ubq',viewer, {pdbUri:'https://files.rcsb.org/view/'}, function() {
           viewer.setStyle({},{cartoon:{color: 'spectrum'}});
           glviewer.addSurface($3Dmol.SurfaceType.VDW, {color: 'white','opacity':0.5}, {});
           toggleCAGraph(8);
