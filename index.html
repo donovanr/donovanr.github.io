@@ -26,7 +26,7 @@ Modified by Rory Donovan-Maiye
 				<div class="content">
 					<h1><a href="#">Rory Donovan-Maiye</a></h1>
 					<p>Ph.D in Computational Biology:<br />
-					Systems Biology, Biophysics, and Machine Learning</p>
+					Machine Learning / Systems Biology / Statistical Physics</p>
 					<ul class="actions">
 						<li><a href="#research" class="button icon fa-chevron-down scrolly">Research</a></li>
 					</ul>
@@ -36,9 +36,43 @@ Modified by Rory Donovan-Maiye
 
 		<!-- Two -->
 
-
 			<section id="research" class="wrapper">
 				<div class="inner alt">
+
+					<section class="spotlight">
+						<div class="image"><img src="images/IC3D.png" alt="" /></div>
+						<div class="content">
+							<h3>Integrated Cell Modeling</h3>
+							<p>At the Allen Institute for Cell Science I've been working in collaboration with Greg Johnson to build integrated models of single cells.  We use conditional generative adversarial networks (GANs) to fuse data from multiple fluorescence microscopy experiments into a coherent model of sub-cellular structure localization in single cells..</p>
+							<ul>
+								<li>Our <a href="">first pre-print</a> addresses the 2D case</li>
+								<li>Our work on 3D integrated cells is forthcoming.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="spotlight">
+						<div class="image"><img src="images/timeseries.png" alt="" /></div>
+						<div class="content">
+							<h3>Sparse Time-Series Models</h3>
+							<p>The idea here is to integrate data across time-points to build sparse regression models for time-sereis data, such that the sparse regressors at neighboring time points vary smoothly.  This would be usefule for e.g. RNA-seq experiments with multiple time-points, if you wanted to predict the set genes driving a phenotype, and see how that set changes over time..  </p>
+							<ul>
+								<li>The Julia code for this method is almost ready to release.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section class="spotlight">
+						<div class="image"><img src="images/footprinting.png" alt="" /></div>
+						<div class="content">
+							<h3>Integrated Workflow for of Transciption Factor Binding SIte Prediction</h3>
+							<p>In an effort to find the best candidate transcriptions factors to input to the Price Lab's transcriptional regulatory network inference tools, I constructed a machine learning pipeline to integrate an array of genome-scale data and predictive tools to output a single high confidence prediction of transcriptional activity at arbitrary sites across the genome.</p>
+							<ul>
+								<li>A paper describing this work, and a publicly available database of our predictions are both forthcoming.</li>
+							</ul>
+						</div>
+					</section>
+
 					<section class="spotlight">
 						<div class="image"><img src="images/we-data.png" alt="" /></div>
 						<div class="content">
@@ -48,31 +82,32 @@ Modified by Rory Donovan-Maiye
 								<li>Our <a href="pdfs/JCP-2013.pdf">first paper</a> dealt with non-spatial models</li>
 								<li>Our <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004611">second paper</a> addresses models of spatially resolved cellular processes.</li>
 							</ul>
-
 						</div>
 					</section>
+
 					<section class="spotlight">
 						<div class="image"><img src="images/GM-3DMol.png" alt="" /></div>
 						<div class="content">
 							<h3>Graphical Models for Free Energy Estimation</h3>
 							<p>The main approaches to computationally estimating how strongly two biomolecules bind together are often either overly time consuming (e.g. molecular dynamics) or overly empirical (e.g. docking).  Alternatively, using graphical models of proteins to compute the Bethe free energy of binding can be both fast and accurate.  We are working to improve this approach and rigorously quantify the error involved in the approximation (work in progress).</p>
 							<ul>
-								<li>I built a <a href="MRF_visualization_3dmol.html">web app</a> to visualize the graphs induced on pdb structures.</li>
+								<li>This work is summarize in a JCTC paper and is available <a href="http://pubs.acs.org/doi/abs/10.1021/acs.jctc.7b00775">here</a>.</li>
+								<li>Here is <a href="MRF_visualization_3dmol.html">web app</a> to visualize the graphs induced on pdb structures.</li>
 							</ul>
-
 						</div>
 					</section>
+
 					<section class="spotlight">
 						<div class="image"><img src="images/atp-path.png" alt="" /></div>
 						<div class="content">
 							<h3>Quantitative Evolution and the ATP Synthase</h3>
 							<p>Using simple state-based models of proton transport and free energy transduction, we probe the optimality of the curiously engineered rotary mechanism of the ATP synthase.  We take a very high-level approach here; for instance, our models are entirely agnostic to structure, and we allow each potential transporter mechanism to optimize itself over all unknown parameters that are thermodynamically permissible.</p>
 							<ul>
-								<li>Our paper <em>Biophysical comparison of ATP synthesis mechanisms shows a kinetic advantage for the rotary process</em> is currently in press at PNAS.</li>
+								<li>Our PNAS paper <em>Biophysical comparison of ATP synthesis mechanisms shows a kinetic advantage for the rotary process</em> available <a href= "http://www.pnas.org/content/113/40/11220.full">here</a>.</li>
 							</ul>
-
 						</div>
 					</section>
+
 					<section class="spotlight">
 						<div class="image"><img src="images/network.png" alt="" /></div>
 						<div class="content">
@@ -81,9 +116,9 @@ Modified by Rory Donovan-Maiye
 							<ul>
 								<li>Our paper on mixed graphical models is published in <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1039-0">BMC Bioinformatics</a></li>
 							</ul>
-
 						</div>
 					</section>
+
 					<section class="spotlight">
 						<div class="image"><img src="images/simulated_flu.png" alt="" /></div>
 						<div class="content">
@@ -92,9 +127,9 @@ Modified by Rory Donovan-Maiye
 							<ul>
 								<li>The <a href="https://github.com/donovanr/Stochastic_cell_division">simulation engine</a> for this project was my first foray into using <a href="http://julialang.org">Julia</a> for scientific computing.</li>
 							</ul>
-
 						</div>
 					</section>
+
 				</div>
 			</section>
 
@@ -103,9 +138,9 @@ Modified by Rory Donovan-Maiye
 			<section id="about" class="wrapper style2 special">
 				<header class="major">
 					<h2>About</h2>
-					<p>I live in Seattle. I work at the Allen Institute for Cell Science, designing efficient learning algorithms for extracting knowledge from high dimensional experimental data, and integrating machine learning approaches with mechanistic biophysical models to create multiscale models of cellular behavior.  Before that, I was a postdoc at the <a href="https://www.systemsbiology.org/">Institute for Systems Biology</a> with the <a href="https://price.systemsbiology.org/">Price Lab</a>.<br />
-
-						I went grad school at <a href="http://www.compbio.cmu.edu/">CMU &amp; Pitt</a>, where I worked with <a href="http://www.csb.pitt.edu/Faculty/zuckerman/">Dan Zuckerman</a>,<br />
+					<p>I live in Seattle. I work at the <a href="https://www.alleninstitute.org/what-we-do/cell-science/">Allen Institute for Cell Science</a>, designing efficient learning algorithms for extracting knowledge from high dimensional experimental data, and integrating machine learning approaches with mechanistic biophysical models to create multiscale models of cellular behavior.<br /><br />
+					Before that, I was a postdoc at the <a href="https://www.systemsbiology.org/">Institute for Systems Biology</a> with the <a href="https://price.systemsbiology.org/">Price Lab</a>.<br /><br />
+					I went grad school at <a href="http://www.compbio.cmu.edu/">CMU &amp; Pitt</a>, where I worked with <a href="http://www.csb.pitt.edu/Faculty/zuckerman/">Dan Zuckerman</a>,<br />
 					 	and collaborated with <a href="http://www.csb.pitt.edu/Faculty/Faeder/">Jim Faeder</a>, <a href="http://www.cs.cmu.edu/~cjl/">Chris Langmead</a>, <a href="http://staff.psc.edu/dittrich/">Markus Dittrich</a>, <a href="http://murphylab.web.cmu.edu">Bob Murphy</a>, and <a href="http://www.csb.pitt.edu/Faculty/benos/">Takis Benos</a>.
 					</p>
 				</header>
