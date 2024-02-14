@@ -4,209 +4,175 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-
 <!--
 Modified by Rory Donovan-Maiye
 -->
-
 <html lang="en">
-
-<head>
-	<title>Rory Donovan-Maiye</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-</head>
-
-<body id="top">
-
-	<!-- Header -->
-	<header id="header">
-		<div class="content">
-			<h1><a href="#">Rory Donovan-Maiye</a></h1>
-			<p>Senior Scientist <br> Machine Learning / Computational Biology</p>
-			<ul class="actions">
-				<li><a href="#research" class="button icon fa-chevron-down scrolly">Research</a></li>
-			</ul>
-		</div>
-		<div class="image nophone">
-			<div class="inner"><img src="images/headshot.jpg" alt="" /></div>
-		</div>
-	</header>
-
-	<!-- Two -->
-
-	<section id="research" class="wrapper">
-		<div class="inner alt">
-
-			<section class="spotlight">
-				<div class="image"><img src="images/workflow.png" alt="" /></div>
-				<div class="content">
-					<h3>Open and reproducible data-centric workflows</h3>
-					<p>Truly open science demands transparent, reproducible workflows that version code and data together. Unfortunately, <a href="https://www.youtube.com/watch?v=zwRdO9_GGhY">research workflows are often a mess</a>, especially when working across large, diverse teams. We built a simple project template with preconfigured integration hooks to make it easy to do things the right way. If you work primarily in Python and are interested in versioning code & data, this may be of interest to you.
-
-					<p>Specifically, we use <a href="https://git-scm.com/">Git</a> to version code, <a href="https://docs.quiltdata.com">Quilt</a> to version data, <a href=" https://www.prefect.io">Prefect</a> to run workflows, <a href="https://dask.org/">Dask</a> for distributed computation, and <a href="https://github.com/">Github</a> for CI, auto-building docs, and pushing packages to <a href="https://pypi.org/">PyPI</a>. We stitch these tools together in a customized <a href="https://cookiecutter.readthedocs.io">Cookiecutter</a> template that makes it easy to integrate and use them, and leverages our simple <a href="https://github.com/AllenCellModeling/datastep">Datastep</a> framework to build project workflows that are both fully import-able Python libraries, but also come with a friendly command-line interface to version data and push it to the cloud.</p>
-
-					<ul>
-						<li>Here is our <a href="https://github.com/AllenCellModeling/cookiecutter-stepworkflow">project template</a>.</li>
-						<li><a href="https://github.com/allencellmodeling/actk">actk</a> is an example of a workflow built on our template that processes terabytes of imaging data as input to our deep learning workflows.</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="spotlight">
-				<div class="image"><img src="images/cardio_fish.png" alt="" /></div>
-				<div class="content">
-					<h3>Cell states beyond transcriptomics</h3>
-					<p>Quantitative co-analysis of RNA abundance and sarcomere organization in single cells and an integrated framework to predict subcellular organization states from gene expression. We used human induced pluripotent stem cell (hiPSC)-derived cardiomyocytes expressing mEGFP-tagged alpha-actinin-2 to develop quantitative image analysis tools for systematic and automated classification of subcellular organization. This captured a wide range of sarcomeric organization states within cell populations that were previously difficult to quantify. We performed RNA FISH targeting genes identified by single cell RNA sequencing to simultaneously assess the relationship between transcript abundance and structural states in single cells. Co-analysis of gene expression and sarcomeric patterns in the same cells revealed biologically meaningful correlations that could be used to predict organizational states. We establish a framework for multi-dimensional analysis of single cells to study the relationships between gene expression and subcellular organization and to develop a more nuanced description of cell states.</p>
-					<ul>
-						<li><a href="https://www.biorxiv.org/content/10.1101/2020.05.26.081083v1">Preprint</a></li>
-						<li><a href="https://open.quiltdata.com/b/allencell/tree/aics/integrated_transcriptomics_structural_organization_hipsc_cm/">Data</a></li>
-						<li><a href="https://github.com/AllenCellModeling/fish_morphology_code">Code</a></li>
-						<li><a href="https://mybinder.org/v2/gh/AllenCellModeling/fish_morphology_manuscript_notebooks/master?filepath=notebooks">Interactive plots</a></li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="spotlight">
-				<div class="image"><img src="images/IC3D.png" alt="" /></div>
-				<div class="content">
-					<h3>Integrated Cell Modeling</h3>
-					<p>At the Allen Institute for Cell Science I've been working in collaboration with Greg Johnson to build integrated models of single cells. We use conditional generative adversarial networks (GANs) and variational autoencoders (VAes) to fuse data from multiple fluorescence microscopy experiments into a coherent model of sub-cellular structure localization in single cells.</p>
-					<ul>
-						<li>Our <a href="https://arxiv.org/abs/1705.00092">first pre-print</a> addresses the 2D case</li>
-						<li>Our work on <a href="https://www.biorxiv.org/content/early/2017/12/21/238378">3D integrated cells</a> is now out.</li>
-						<li>A much more stable and interpretable &beta;-VAE version of both the 2D and 3D models is available <a href="https://github.com/AllenCellModeling/pytorch_integrated_cell/">here</a> while a manuscript is in progress.</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="spotlight">
-				<div class="image"><img src="images/timeseries.png" alt="" /></div>
-				<div class="content">
-					<h3>Sparse Time-Series Models</h3>
-					<p>The idea here is to integrate data across time-points to build sparse regression models for time-series data, such that the sparse regressors at neighboring time points vary smoothly. This would be useful for e.g. RNA-seq experiments with multiple time-points, if you wanted to predict the set genes driving a phenotype, and see how that set changes over time.</p>
-					<ul>
-						<li>The Julia code for this method is currently in development.</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="spotlight">
-				<div class="image"><img src="images/footprinting.png" alt="" /></div>
-				<div class="content">
-					<h3>Integrated Workflow for Transcription Factor Binding Site Prediction</h3>
-					<p>In an effort to find the best candidate transcriptions factors to input to the Price Lab's transcriptional regulatory network inference tools, I constructed a machine learning pipeline to integrate an array of genome-scale data and predictive tools to output a single high confidence prediction of transcriptional activity at arbitrary sites across the genome.</p>
-					<ul>
-						<li>A preprint describing this work is available <a href="https://www.biorxiv.org/content/early/2018/01/27/252023">here</a>
-						<li>a publicly available database of our predictions is available as an R package <a href="https://github.com/PriceLab/TReNA">here</a></li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="spotlight">
-				<div class="image"><img src="images/we-data.png" alt="" /></div>
-				<div class="content">
-					<h3>Weighted Ensemble Systems Biology</h3>
-					<p>It can be really difficult to run stochastic models of biological processes enough times to accurately sample their output. We applied the <a href="http://westpa.github.io/westpa/">WESTPA</a> implementation of weighted ensemble to these kinds of models and achieved orders of magnitude speed-ups in sampling. The essential trick here is that most observables of interest in complex models are rare events (e.g state transitions), and weighted ensemble can efficiently sample rare events in stochastic systems.</p>
-					<ul>
-						<li>Our <a href="pdfs/JCP-2013.pdf">first paper</a> dealt with non-spatial models</li>
-						<li>Our <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004611">second paper</a> addresses models of spatially resolved cellular processes.</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="spotlight">
-				<div class="image"><img src="images/GM-3DMol.png" alt="" /></div>
-				<div class="content">
-					<h3>Graphical Models for Free Energy Estimation</h3>
-					<p>The main approaches to computationally estimating how strongly two biomolecules bind together are often either overly time consuming (e.g. molecular dynamics) or overly empirical (e.g. docking). Alternatively, using graphical models of proteins to compute the Bethe free energy of binding can be both fast and accurate. We are working to improve this approach and rigorously quantify the error involved in the approximation (work in progress).</p>
-					<ul>
-						<li>This work is summarize in a JCTC paper and is available <a href="http://pubs.acs.org/doi/abs/10.1021/acs.jctc.7b00775">here</a>.</li>
-						<li>Here is <a href="MRF_visualization_3dmol.html">web app</a> to visualize the graphs induced on pdb structures.</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="spotlight">
-				<div class="image"><img src="images/atp-path.png" alt="" /></div>
-				<div class="content">
-					<h3>Quantitative Evolution and the ATP Synthase</h3>
-					<p>Using simple state-based models of proton transport and free energy transduction, we probe the optimality of the curiously engineered rotary mechanism of the ATP synthase. We take a very high-level approach here; for instance, our models are entirely agnostic to structure, and we allow each potential transporter mechanism to optimize itself over all unknown parameters that are thermodynamically permissible.</p>
-					<ul>
-						<li>Our PNAS paper <em>Biophysical comparison of ATP synthesis mechanisms shows a kinetic advantage for the rotary process</em> available <a href="http://www.pnas.org/content/113/40/11220.full">here</a>.</li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="spotlight">
-				<div class="image"><img src="images/network.png" alt="" /></div>
-				<div class="content">
-					<h3>Network Inference with Graphical Models of Heterogeneous Genomic and Clinical Data</h3>
-					<p>We use graphical models to learn interaction networks between genes, clinical factors, and disease diagnoses. Our models accommodate data that is both continuous and discrete, and are aggressively filtered for false-positive edges via collider detection algorithms. Graphical models learned from biomedical data can be used for classification and biomarker selection (with performance comparable to currently available univariate tools), while revealing the underlying causal network structure and thus allowing for arbitrary likelihood queries over the data.</p>
-					<ul>
-						<li>Our paper on mixed graphical models is published in <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1039-0">BMC Bioinformatics</a></li>
-					</ul>
-				</div>
-			</section>
-
-			<section class="spotlight">
-				<div class="image"><img src="images/simulated_flu.png" alt="" /></div>
-				<div class="content">
-					<h3>Stochastic Models of Cellular Heterogeneity</h3>
-					<p>Simple stochastic models can recapitulate the population-level heterogeneity of protein abundance found in, for example, colonies of <i>e. coli</i>. A non-spatial model of gene expression, stochastically simulated with a modified Gillespie algorithm that takes into account cell division, is able to reproduce experimental data quite well.</p>
-					<ul>
-						<li>The <a href="https://github.com/donovanr/Stochastic_cell_division">simulation engine</a> for this project was my first foray into using <a href="http://julialang.org">Julia</a> for scientific computing.</li>
-					</ul>
-				</div>
-			</section>
-
-		</div>
-	</section>
-
-
-	<!-- Two -->
-	<section id="about" class="wrapper style2 special">
-		<!-- <section id="about" class="wrapper style2 special"> -->
-		<header class="major">
-			<h2>About</h2>
-		</header>
-		<p>
-			I live on <a href="https://en.wikipedia.org/wiki/Vashon,_Washington">Vashon Island</a>. I work at the <a href="https://www.alleninstitute.org/what-we-do/cell-science/">Allen Institute for Cell Science</a>, designing efficient learning algorithms for extracting knowledge from high dimensional experimental data, and integrating machine learning approaches with mechanistic biophysical models to create multiscale models of cellular behavior.
-		</p>
-		<p>
-			Before that, I was a postdoc at the <a href="https://www.systemsbiology.org/">Institute for Systems Biology</a> with the <a href="https://isbscience.org/people/labs/hood-price-lab/">Hood-Price Lab</a>.
-		</p>
-		<p>
-			I went grad school at <a href="http://www.compbio.cmu.edu/">CMU &amp; Pitt</a>, where I worked with <a href="https://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/basic-science-departments/biomedical-engineering/bme-labs/zuckerman-lab/index.cfm">Dan Zuckerman</a>,<br />
-			and collaborated with <a href="http://www.csb.pitt.edu/Faculty/Faeder/">Jim Faeder</a>, <a href="http://www.cs.cmu.edu/~cjl/">Chris Langmead</a>, <a href="https://bioteam.net/bio/markus-dittrich/">Markus Dittrich</a>, <a href="http://murphylab.web.cmu.edu">Bob Murphy</a>, and <a href="http://www.csb.pitt.edu/Faculty/benos/">Takis Benos</a>.
-		</p>
-
-		<ul class="icons labeled">
-			<li><a href="https://github.com/donovanr" class="icon fa-github"><span class="label">GitHub</span></a></li>
-			<li><a href="http://scholar.google.com/citations?user=4TzE8Z8AAAAJ" class="icon fa-google"><span class="label">Google Scholar</span></a></li>
-			<li><a href="https://www.linkedin.com/in/rorymdonovan" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-			<li><a href="pdfs/Rory-Resume.pdf" class="icon fa-file-o"><span class="label">CV</span></a></li>
-			<li><a href="mailto:donovanr@alumni.reed.edu" class="icon fa-send"><span class="label">Email</span></a></li>
-		</ul>
-	</section>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<p class="copyright"><a href="http://creativecommons.org/licenses/by/3.0/" class="icon fa-creative-commons"></a> Rory Donovan-Maiye</p>
-	</footer>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+    <head>
+        <title>Rory Donovan-Maiye</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    </head>
+    <body id="top">
+        <!-- Header -->
+        <header id="header">
+            <div class="content">
+                <h1>
+                    <a href="#">Rory Donovan-Maiye</a>
+                </h1>
+                <p>Senior Scientist
+                    <br> Machine Learning / Computational Biology
+                </p>
+                <ul class="actions">
+                    <li>
+                        <a href="#research" class="button icon fa-chevron-down scrolly">Recent Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="image nophone">
+                <div class="inner">
+                    <img src="images/headshot.jpg" alt="">
+                </div>
+            </div>
+        </header>
+        <!-- Two -->
+        <section id="research" class="wrapper">
+            <div class="inner alt">
+                <section class="spotlight">
+                    <div class="content">
+                        <h3>Multimodal generative models of in vitro cellular perturbations</h3>
+                        <p>Generating image-based phenotype responses to cellular perturbations in silico, and vice versa to integrate multiple screening modalities and provide in silico predictions to efficiently guide further wet-lab experiments. "Stable diffusion but for biology," if you like. Work in progress.</p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="content">
+                        <h3>Universal cell image embeddings using masked autoencoders and vision transformers</h3>
+                        <p>Self-supervised representation learning of cellular morphology / perturbation state across cell types and image modalities to build a foundational vision model capable of universally embedding all in vitro cellular image modalities. Work in progress.</p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="content">
+                        <h3>Multiscale modality-agnostic molecular embeddings using chemical language models</h3>
+                        <p>Protein, DNA, RNA, and small molecule language models have strong in-domain performance but lack generality: e.g., protein language models don't understand chemical modification / non-natural amino acids, but peptides with such properties are crucial therapeutic targets. Using self-supervision and hierarchical / stochastic tokenization schemes, we train a truly general language model on the entirety of biologically-relevant molecule space, for universally applicable embeddings and generative models. Work in progress.</p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="content">
+                        <h3>Rescuing recombinant protein expression in mammalian cells using protein language models</h3>
+                        <p>Coupling inverse folding sequence generators with an in-house LLM-based expression prediction model, we rescue non- and low-expressing proteins of interest by proposing variant sequences that reliably express at 10-100x the level of the parent sequence. Work in progress.</p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="content">
+                        <h3>Pharmacokinetic property prediction from molecular structure</h3>
+                        <p>Accurately predicting half-life and clearance rate for monomer and multimer peptide / small protein therapeutics from historical data to reduce the need for pre-clinical animal trials. We use multitask Gaussian processes to leverage and factor all high dimension data relationships of interest, and make uncertainty-quantified predictions for novel molecular entities. Work in progress.</p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="content">
+                        <h3>A Python library for high throughput cellular image data analysis</h3>
+                        <p>Foundational image / multimodal models are data hungry; to efficiently feed them with new data it's imperative to make data QC, collation, processing, analysis, and modeling as modular, performant, and painless as possible. A Python library with templated HPC workflows, a modular CLI, pre-prepared analysis notebooks, and import /export image QC enables rapid, reproducible, and verifiable microscope → knowledge distillation, as well as efficient data curation for training large foundational models. Work in progress, to be open-sourced.</p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="content">
+                        <h3>A deep generative model of 3D single-cell organization</h3>
+                        <p>We introduce a framework for end-to-end integrative modeling of 3D single-cell multi-channel fluorescent image data of diverse subcellular structures. We employ stacked conditional β-variational autoencoders to first learn a latent representation of cell morphology, and then learn a latent representation of subcellular structure localization which is conditioned on the learned cell morphology.
+                            <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009155">Paper link</a>
+                        </p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="content">
+                        <h3>Open and reproducible data-centric workflows</h3>
+                        <p>A simple project template with preconfigured integration hooks to make it easy to do things the right way. If you work primarily in Python and are interested in versioning code & data,
+                            <a href="https://github.com/AllenCellModeling/cookiecutter-stepworkflow">this</a> may be of interest to you.
+                        </p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="content">
+                        <h3>Cell states beyond transcriptomics</h3>
+                        <p>Quantitative co-analysis of RNA abundance and sarcomere organization in single cells and an integrated framework to predict subcellular organization states from gene expression.
+                            <a href="https://www.sciencedirect.com/science/article/pii/S2405471221001563">Paper link</a>
+                        </p>
+                    </div>
+                </section>
+                <!-- Two -->
+                <section id="about" class="wrapper style2 special">
+                    <!-- <section id="about" class="wrapper style2 special"> -->
+                    <header class="major">
+                        <h2>About</h2>
+                    </header>
+                    <p>
+                        I live on
+                        <a href="https://en.wikipedia.org/wiki/Vashon,_Washington">Vashon Island</a>. I work at the
+                        <a href="https://www.novonordisk-us.com/about/who-we-are.html">Novo Nordisk</a>
+                        , designing efficient learning algorithms for extracting knowledge from high dimensional experimental data, and integrating machine learning approaches with mechanistic biophysical models to create multiscale models of cellular behavior.
+                    </p>
+                    <p>
+                        Before that, I was a a Sr. Modeling Scientist at the Allen Insitute for Cell Science and a postdoc at the
+                        <a href="https://www.systemsbiology.org/">Institute for Systems Biology</a> with the
+                        <a href="https://isbscience.org/people/labs/hood-price-lab/">Hood-Price Lab</a>
+                        .
+                    </p>
+                    <p>
+                        I went grad school at
+                        <a href="http://www.compbio.cmu.edu/">CMU &amp; Pitt</a>, where I worked with
+                        <a href="https://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/basic-science-departments/biomedical-engineering/bme-labs/zuckerman-lab/index.cfm">Dan Zuckerman</a>,
+                        <br>
+                        and collaborated with
+                        <a href="http://www.csb.pitt.edu/Faculty/Faeder/">Jim Faeder</a>,
+                        <a href="http://www.cs.cmu.edu/~cjl/">Chris Langmead</a>,
+                        <a href="https://bioteam.net/bio/markus-dittrich/">Markus Dittrich</a>,
+                        <a href="http://murphylab.web.cmu.edu">Bob Murphy</a>, and
+                        <a href="http://www.csb.pitt.edu/Faculty/benos/">Takis Benos</a>
+                        .
+                    </p>
+                    <ul class="icons labeled">
+                        <li>
+                            <a href="https://github.com/donovanr" class="icon fa-github">
+                                <span class="label">GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://scholar.google.com/citations?user=4TzE8Z8AAAAJ" class="icon fa-google">
+                                <span class="label">Google Scholar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rorymdonovan" class="icon fa-linkedin">
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pdfs/Rory-Resume.pdf" class="icon fa-file-o">
+                                <span class="label">CV</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:donovanr@alumni.reed.edu" class="icon fa-send">
+                                <span class="label">Email</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">
+                        <a href="http://creativecommons.org/licenses/by/3.0/" class="icon fa-creative-commons"></a> Rory Donovan-Maiye
+                    </p>
+                </footer>
+                <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.scrolly.min.js"></script>
+                <script src="assets/js/skel.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+                <script src="assets/js/main.js"></script>
+            </body>
+        </html>
