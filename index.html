@@ -25,7 +25,8 @@ Modified by Rory Donovan-Maiye
                     <a href="#">Rory Donovan-Maiye</a>
                 </h1>
                 <p>Senior Scientist
-                    <br> Machine Learning / Computational Biology
+                    <br> Biological Foundation Models
+                    <br> Applied Computational Biology and Machine Learning
                 </p>
                 <ul class="actions">
                     <li>
@@ -43,62 +44,60 @@ Modified by Rory Donovan-Maiye
         <section id="research" class="wrapper">
             <div class="inner alt">
                 <section class="spotlight">
+                    <div class="image"><img src="images/baseline.png" alt="" /></div>
+                    <div class="content">
+                        <h3>Enhancing generative perturbation models with LLM-informed gene embeddings</h3>
+                        <p>Genetic perturbations are key to understanding how genes regulate cell behavior, yet the ability to predict responses to these perturbations remains a significant challenge. While numerous generative models have been developed for perturbation data, they typically lack the capability to generalize to perturbations not encountered during training. To alleviate this limitation, we introduce a novel methodology that incorporates prior knowledge through embeddings derived from Large Language Models (LLMs), effectively informing our predictive models with a deeper biological context. By leveraging this source of pre-existing information, our models achieve state-of-the-art performance in predicting the outcomes of single-gene perturbations.</p>
+                    </div>
+                </section>
+                <section class="spotlight">
+                    <div class="image"><img src="images/multimodalLLM.png" alt="" /></div>
                     <div class="content">
                         <h3>Multimodal generative models of in vitro cellular perturbations</h3>
                         <p>Generating image-based phenotype responses to cellular perturbations in silico, and vice versa to integrate multiple screening modalities and provide in silico predictions to efficiently guide further wet-lab experiments. "Stable diffusion but for biology," if you like. Work in progress.</p>
                     </div>
                 </section>
                 <section class="spotlight">
+                    <div class="image"><img src="images/image_embeddings.png" alt="" /></div>
                     <div class="content">
                         <h3>Universal cell image embeddings using masked autoencoders and vision transformers</h3>
                         <p>Self-supervised representation learning of cellular morphology / perturbation state across cell types and image modalities to build a foundational vision model capable of universally embedding all in vitro cellular image modalities. Work in progress.</p>
                     </div>
                 </section>
                 <section class="spotlight">
+                    <div class="image"><img src="images/universalmol.png" alt="" /></div>
                     <div class="content">
                         <h3>Multiscale modality-agnostic molecular embeddings using chemical language models</h3>
                         <p>Protein, DNA, RNA, and small molecule language models have strong in-domain performance but lack generality: e.g., protein language models don't understand chemical modification / non-natural amino acids, but peptides with such properties are crucial therapeutic targets. Using self-supervision and hierarchical / stochastic tokenization schemes, we train a truly general language model on the entirety of biologically-relevant molecule space, for universally applicable embeddings and generative models. Work in progress.</p>
                     </div>
                 </section>
                 <section class="spotlight">
+                    <div class="image"><img src="images/seq2expr.png" alt="" /></div>
                     <div class="content">
                         <h3>Rescuing recombinant protein expression in mammalian cells using protein language models</h3>
                         <p>Coupling inverse folding sequence generators with an in-house LLM-based expression prediction model, we rescue non- and low-expressing proteins of interest by proposing variant sequences that reliably express at 10-100x the level of the parent sequence. Work in progress.</p>
                     </div>
                 </section>
                 <section class="spotlight">
+                    <div class="image"><img src="images/structpk.png" alt="" /></div>
                     <div class="content">
                         <h3>Pharmacokinetic property prediction from molecular structure</h3>
                         <p>Accurately predicting half-life and clearance rate for monomer and multimer peptide / small protein therapeutics from historical data to reduce the need for pre-clinical animal trials. We use multitask Gaussian processes to leverage and factor all high dimension data relationships of interest, and make uncertainty-quantified predictions for novel molecular entities. Work in progress.</p>
                     </div>
                 </section>
                 <section class="spotlight">
+                    <div class="image"><img src="images/morphexpt.png" alt="" /></div>
                     <div class="content">
                         <h3>A Python library for high throughput cellular image data analysis</h3>
                         <p>Foundational image / multimodal models are data hungry; to efficiently feed them with new data it's imperative to make data QC, collation, processing, analysis, and modeling as modular, performant, and painless as possible. A Python library with templated HPC workflows, a modular CLI, pre-prepared analysis notebooks, and import /export image QC enables rapid, reproducible, and verifiable microscope → knowledge distillation, as well as efficient data curation for training large foundational models. Work in progress, to be open-sourced.</p>
                     </div>
                 </section>
                 <section class="spotlight">
+                    <div class="image"><img src="images/IC3D.png" alt="" /></div>
                     <div class="content">
                         <h3>A deep generative model of 3D single-cell organization</h3>
                         <p>We introduce a framework for end-to-end integrative modeling of 3D single-cell multi-channel fluorescent image data of diverse subcellular structures. We employ stacked conditional β-variational autoencoders to first learn a latent representation of cell morphology, and then learn a latent representation of subcellular structure localization which is conditioned on the learned cell morphology.
                             <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009155">Paper link</a>
-                        </p>
-                    </div>
-                </section>
-                <section class="spotlight">
-                    <div class="content">
-                        <h3>Open and reproducible data-centric workflows</h3>
-                        <p>A simple project template with preconfigured integration hooks to make it easy to do things the right way. If you work primarily in Python and are interested in versioning code & data,
-                            <a href="https://github.com/AllenCellModeling/cookiecutter-stepworkflow">this</a> may be of interest to you.
-                        </p>
-                    </div>
-                </section>
-                <section class="spotlight">
-                    <div class="content">
-                        <h3>Cell states beyond transcriptomics</h3>
-                        <p>Quantitative co-analysis of RNA abundance and sarcomere organization in single cells and an integrated framework to predict subcellular organization states from gene expression.
-                            <a href="https://www.sciencedirect.com/science/article/pii/S2405471221001563">Paper link</a>
                         </p>
                     </div>
                 </section>
@@ -110,9 +109,8 @@ Modified by Rory Donovan-Maiye
                     </header>
                     <p>
                         I live on
-                        <a href="https://en.wikipedia.org/wiki/Vashon,_Washington">Vashon Island</a>. I work at the
-                        <a href="https://www.novonordisk-us.com/about/who-we-are.html">Novo Nordisk</a>
-                        , designing efficient learning algorithms for extracting knowledge from high dimensional experimental data, and integrating machine learning approaches with mechanistic biophysical models to create multiscale models of cellular behavior.
+                        <a href="https://en.wikipedia.org/wiki/Vashon,_Washington">Vashon Island</a>. I work at
+                        <a href="https://www.novonordisk-us.com/about/who-we-are.html">Novo Nordisk</a>, training and applying multimodal biological foundation models to extracting knowledge from high dimensional experimental data.
                     </p>
                     <p>
                         Before that, I was a a Sr. Modeling Scientist at the Allen Insitute for Cell Science and a postdoc at the
@@ -122,10 +120,10 @@ Modified by Rory Donovan-Maiye
                     </p>
                     <p>
                         I went grad school at
-                        <a href="http://www.compbio.cmu.edu/">CMU &amp; Pitt</a>, where I worked with
+                        <a href="http://www.compbio.cmu.edu/">CMU &amp; Pitt</a>, where I was advised by
                         <a href="https://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/basic-science-departments/biomedical-engineering/bme-labs/zuckerman-lab/index.cfm">Dan Zuckerman</a>,
                         <br>
-                        and collaborated with
+                        and worked with
                         <a href="http://www.csb.pitt.edu/Faculty/Faeder/">Jim Faeder</a>,
                         <a href="http://www.cs.cmu.edu/~cjl/">Chris Langmead</a>,
                         <a href="https://bioteam.net/bio/markus-dittrich/">Markus Dittrich</a>,
