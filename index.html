@@ -72,6 +72,14 @@ Modified by Rory Donovan-Maiye
                     </div>
                 </section>
                 <section class="spotlight">
+                    <div class="image"><img src="images/tokenizer.png" alt="" /></div>
+                    <div class="content">
+                        <h3>A byte-pair encoding (BPE) tokenizer for SELFIES strings</h3>
+                        <p>Tokenization is a key preprossing stem for training LLMs, but off the shelf NLP tokenizers (tiktoken, sentencepiece) produce undesirable artfacts when tokenizing string-based molecular representation. I implement a parallel / highly efficient BPE tokenizer in Rust with Python bindings exposed via PyO3/Maturin optimized for the SELFIES molecular representation syntax that outperforms off the shelf methods while producing significantly cleaner / more compact tokenized molecular representations that are compatible as inputs with the Hugging Face models.
+                        </p>
+                    </div>
+                </section>
+                <section class="spotlight">
                     <div class="image"><img src="images/seq2expr.png" alt="" /></div>
                     <div class="content">
                         <h3>Rescuing recombinant protein expression in mammalian cells using protein language models</h3>
@@ -79,7 +87,7 @@ Modified by Rory Donovan-Maiye
                     </div>
                 </section>
                 <section class="spotlight">
-                    <div class="image"><img src="images/structpk.png" alt="" /></div>
+                    <div class="image"><img src="images/struct2pk.png" alt="" /></div>
                     <div class="content">
                         <h3>Pharmacokinetic property prediction from molecular structure</h3>
                         <p>Accurately predicting half-life and clearance rate for monomer and multimer peptide / small protein therapeutics from historical data to reduce the need for pre-clinical animal trials. We use multitask Gaussian processes to leverage and factor all high dimension data relationships of interest, and make uncertainty-quantified predictions for novel molecular entities. Work in progress.</p>
@@ -153,7 +161,7 @@ Modified by Rory Donovan-Maiye
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:donovanr@alumni.reed.edu" class="icon fa-send">
+                            <a href="mailto:donovanr@gmail.com" class="icon fa-send">
                                 <span class="label">Email</span>
                             </a>
                         </li>
