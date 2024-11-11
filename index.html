@@ -54,28 +54,28 @@ Modified by Rory Donovan-Maiye
                     <div class="image"><img src="images/multimodalLLM.png" alt="" /></div>
                     <div class="content">
                         <h3>Multimodal generative models of in vitro cellular perturbations</h3>
-                        <p>Generating image-based phenotype responses to cellular perturbations in silico, and vice versa to integrate multiple screening modalities and provide in silico predictions to efficiently guide further wet-lab experiments. "Stable diffusion but for biology," if you like. Work in progress.</p>
+                        <p>Generating image-based phenotype responses to cellular perturbations in silico, and vice versa to integrate multiple screening modalities and provide in silico predictions to efficiently guide further wet-lab experiments. "Stable diffusion but for biology," if you like.</p>
                     </div>
                 </section>
                 <section class="spotlight">
                     <div class="image"><img src="images/image_embeddings.png" alt="" /></div>
                     <div class="content">
                         <h3>Universal cell image embeddings using masked autoencoders and vision transformers</h3>
-                        <p>Self-supervised representation learning of cellular morphology / perturbation state across cell types and image modalities to build a foundational vision model capable of universally embedding all in vitro cellular image modalities. Work in progress.</p>
+                        <p>Self-supervised representation learning of cellular morphology / perturbation state across cell types and image modalities to build a foundational vision model capable of universally embedding all in vitro cellular image modalities.</p>
                     </div>
                 </section>
                 <section class="spotlight">
                     <div class="image"><img src="images/universalmol.png" alt="" /></div>
                     <div class="content">
                         <h3>Multiscale modality-agnostic molecular embeddings using chemical language models</h3>
-                        <p>Protein, DNA, RNA, and small molecule language models have strong in-domain performance but lack generality: e.g., protein language models don't understand chemical modification / non-natural amino acids, but peptides with such properties are crucial therapeutic targets. Using self-supervision and hierarchical / stochastic tokenization schemes, we train a truly general language model on the entirety of biologically-relevant molecule space, for universally applicable embeddings and generative models. Work in progress.</p>
+                        <p>Protein, DNA, RNA, and small molecule language models have strong in-domain performance but lack generality: e.g., protein language models don't understand chemical modification / non-natural amino acids, but peptides with such properties are crucial therapeutic targets. Using self-supervision and hierarchical / stochastic tokenization schemes, we train a truly general language model on the entirety of biologically-relevant molecule space, for universally applicable embeddings and generative models.</p>
                     </div>
                 </section>
                 <section class="spotlight">
                     <div class="image"><img src="images/tokenizer.png" alt="" /></div>
                     <div class="content">
                         <h3>A byte-pair encoding (BPE) tokenizer for SELFIES strings</h3>
-                        <p>Tokenization is a key preprossing stem for training LLMs, but off the shelf NLP tokenizers (tiktoken, sentencepiece) produce undesirable artfacts when tokenizing string-based molecular representation. I implement a parallel / highly efficient BPE tokenizer in Rust with Python bindings exposed via PyO3/Maturin optimized for the SELFIES molecular representation syntax that outperforms off the shelf methods while producing significantly cleaner / more compact tokenized molecular representations that are compatible as inputs with the Hugging Face models.
+                        <p>Tokenization is a key preprossing stem for training LLMs, but off the shelf NLP tokenizers (tiktoken, sentencepiece) produce undesirable artfacts when tokenizing string-based molecular representation. I implement a parallel / highly efficient BPE tokenizer in Rust with Python bindings exposed via PyO3/Maturin optimized for the SELFIES molecular representation syntax that outperforms off the shelf methods while producing significantly cleaner / more compact tokenized molecular representations that are compatible as inputs with Hugging Face models.
                         </p>
                     </div>
                 </section>
@@ -83,21 +83,21 @@ Modified by Rory Donovan-Maiye
                     <div class="image"><img src="images/seq2expr.png" alt="" /></div>
                     <div class="content">
                         <h3>Rescuing recombinant protein expression in mammalian cells using protein language models</h3>
-                        <p>Coupling inverse folding sequence generators with an in-house LLM-based expression prediction model, we rescue non- and low-expressing proteins of interest by proposing variant sequences that reliably express at 10-100x the level of the parent sequence. Work in progress.</p>
+                        <p>Coupling inverse folding sequence generators with an in-house LLM-based expression prediction model, we rescue non- and low-expressing proteins of interest by proposing variant sequences that reliably express at 10-100x the level of the parent sequence.</p>
                     </div>
                 </section>
                 <section class="spotlight">
                     <div class="image"><img src="images/struct2pk.png" alt="" /></div>
                     <div class="content">
                         <h3>Pharmacokinetic property prediction from molecular structure</h3>
-                        <p>Accurately predicting half-life and clearance rate for monomer and multimer peptide / small protein therapeutics from historical data to reduce the need for pre-clinical animal trials. We use multitask Gaussian processes to leverage and factor all high dimension data relationships of interest, and make uncertainty-quantified predictions for novel molecular entities. Work in progress.</p>
+                        <p>Accurately predicting half-life and clearance rate for monomer and multimer peptide / small protein therapeutics from historical data to reduce the need for pre-clinical animal trials. We use multitask Gaussian processes to leverage and factor all high dimension data relationships of interest, and make uncertainty-quantified predictions for novel molecular entities.</p>
                     </div>
                 </section>
                 <section class="spotlight">
                     <div class="image"><img src="images/morphexpt.png" alt="" /></div>
                     <div class="content">
                         <h3>A Python library for high throughput cellular image data analysis</h3>
-                        <p>Foundational image / multimodal models are data hungry; to efficiently feed them with new data it's imperative to make data QC, collation, processing, analysis, and modeling as modular, performant, and painless as possible. A Python library with templated HPC workflows, a modular CLI, pre-prepared analysis notebooks, and import /export image QC enables rapid, reproducible, and verifiable microscope → knowledge distillation, as well as efficient data curation for training large foundational models. Work in progress, to be open-sourced.</p>
+                        <p>Foundational image / multimodal models are data hungry; to efficiently feed them with new data it's imperative to make data QC, collation, processing, analysis, and modeling as modular, performant, and painless as possible. A Python library with templated HPC workflows, a modular CLI, pre-prepared analysis notebooks, and import /export image QC enables rapid, reproducible, and verifiable microscope → knowledge distillation, as well as efficient data curation for training large foundational models.</p>
                     </div>
                 </section>
                 <section class="spotlight">
