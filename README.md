@@ -5,6 +5,7 @@ Personal academic website built with the [al-folio](https://github.com/alshediva
 ## About
 
 This site showcases my research in computational biology and machine learning, with a focus on:
+
 - Foundation models for biological data
 - Generative AI applications in drug discovery
 - Single-cell modeling and analysis
@@ -50,6 +51,7 @@ This site is deployed via GitHub Pages. Any push to the `main` branch will trigg
 
 1. Create a new markdown file in `_projects/` (e.g., `10_new_project.md`)
 2. Add front matter:
+
 ```yaml
 ---
 layout: page
@@ -60,6 +62,7 @@ importance: 10
 category: current
 ---
 ```
+
 3. Write project content in Markdown below the front matter
 4. Add project image to `assets/img/`
 

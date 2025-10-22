@@ -18,6 +18,7 @@ Generating image-based phenotype responses to cellular perturbations in silico, 
 ## Overview
 
 This project develops multimodal generative models that can:
+
 - Generate cellular image phenotypes from perturbation descriptions
 - Predict perturbation conditions from observed cellular images
 - Bridge multiple experimental modalities (microscopy, genomics, proteomics)
@@ -30,6 +31,7 @@ Traditional drug discovery and biological research requires extensive wet-lab ex
 ## Approach
 
 We leverage recent advances in multimodal learning and diffusion models to build a unified framework that:
+
 1. Learns joint representations of cellular images and perturbation conditions
 2. Generates high-quality synthetic cellular images conditioned on perturbations
 3. Infers likely perturbation conditions from observed phenotypes
