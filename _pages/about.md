@@ -2,33 +2,21 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image_circular: false
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+news: false
+selected_papers: false
+social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I work at the [Allen Institute for Artificial Intelligence](https://allenai.org) on foundation models for biology and human health.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Previously, I was at [Novo Nordisk](https://www.novonordisk-us.com/about/who-we-are.html), training and applying multimodal biological foundation models to extracting knowledge from high dimensional experimental data.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Before that, I was a Sr. Modeling Scientist at the [Allen Institute for Cell Science](https://www.allencell.org/) and a postdoc at the [Institute for Systems Biology](https://www.systemsbiology.org/) with the [Hood-Price Lab](https://isbscience.org/people/labs/hood-price-lab/).
+
+I went to grad school at [CMU & Pitt](http://www.compbio.cmu.edu/), where I was advised by [Dan Zuckerman](https://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/basic-science-departments/biomedical-engineering/bme-labs/zuckerman-lab/index.cfm), and worked with [Jim Faeder](http://www.csb.pitt.edu/Faculty/Faeder/), [Chris Langmead](http://www.cs.cmu.edu/~cjl/), [Markus Dittrich](https://bioteam.net/bio/markus-dittrich/), [Bob Murphy](http://murphylab.web.cmu.edu), and [Takis Benos](http://www.csb.pitt.edu/Faculty/benos/).

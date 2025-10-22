@@ -1,200 +1,167 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "name": "Rory Donovan-Maiye",
+    "url": "https://donovanr.github.io",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "",
+      "postalCode": "",
+      "city": "Seattle",
       "countryCode": "US",
-      "region": "California"
+      "region": "Washington"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "rorymdonovan",
+        "url": "https://www.linkedin.com/in/rorymdonovan/"
+      },
+      {
+        "network": "GitHub",
+        "username": "donovanr",
+        "url": "https://github.com/donovanr"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "Allen Institute for Artificial Intelligence",
+      "position": "Research Scientist",
+      "url": "https://allenai.org",
+      "startDate": "2025",
+      "endDate": "present",
+      "summary": "Foundation models for biology and human health.",
+      "highlights": []
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Novo Nordisk",
+      "position": "Senior Scientist, Machine Intelligence",
+      "url": "https://www.novonordisk-us.com",
+      "startDate": "2021",
+      "endDate": "2025",
+      "summary": "ML / GenAI driven multimodal data analysis and modeling applied to drug discovery and target identification.",
+      "highlights": []
+    },
+    {
+      "name": "Allen Institute for Cell Science",
+      "position": "Research Scientist / Senior Scientist",
+      "url": "https://www.allencell.org",
+      "startDate": "2017",
+      "endDate": "2021",
+      "summary": "Computational biology and machine learning – integrative methods for single cell modeling",
+      "highlights": []
+    },
+    {
+      "name": "Institute for Systems Biology",
+      "position": "Postdoctoral Fellow",
+      "url": "https://www.systemsbiology.org",
+      "startDate": "2016",
+      "endDate": "2017",
+      "summary": "Hood-Price Lab – personalized medicine & wellness, mouse and human genomics, causal learning",
+      "highlights": []
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "institution": "Carnegie Mellon University & University of Pittsburgh",
+      "url": "http://www.compbio.cmu.edu/",
+      "area": "Computational Biology",
+      "studyType": "Ph.D.",
+      "startDate": "2011",
+      "endDate": "2016",
+      "score": "",
+      "courses": ["Systems Biology & Machine Learning"]
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "institution": "University of Washington",
+      "url": "https://www.washington.edu",
+      "area": "Physics",
+      "studyType": "M.S.",
+      "startDate": "2004",
+      "endDate": "2005",
+      "score": "",
+      "courses": []
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "institution": "Reed College",
+      "url": "https://www.reed.edu",
+      "area": "Physics",
+      "studyType": "B.A.",
+      "startDate": "2000",
+      "endDate": "2004",
+      "score": "",
+      "courses": []
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Enhancing generative perturbation models with LLM-informed gene embeddings",
+      "publisher": "ICLR 2024 Workshop on Machine Learning for Genomics Explorations",
+      "releaseDate": "2024",
+      "url": "",
+      "summary": "Kaspar Märtens, Rory Donovan-Maiye, and Jesper Ferkinghoff-Borg"
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Integrated intracellular organization and its variations in human ips cells",
+      "publisher": "Nature",
+      "releaseDate": "2023",
+      "url": "",
+      "summary": "Matheus P Viana, Jianxu Chen, Theo A Knijnenburg, Ritvik Vasan, Calysta Yan, Joy E Arakaki, Matte Bailey, Ben Berry, Antoine Borensztejn, Eva M Brown, et al. (including Rory Donovan-Maiye). Nature, 613(7943):345–354, 2023."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "name": "A deep generative model of 3d single-cell organization",
+      "publisher": "PLOS Computational Biology",
+      "releaseDate": "2022",
+      "url": "",
+      "summary": "Rory M Donovan-Maiye, Jackson M Brown, Caleb K Chan, Liya Ding, Calysta Yan, Nathalie Gaudreault, Julie A Theriot, Mary M Maleckar, Theo A Knijnenburg, and Gregory R Johnson. PLOS Computational Biology, 18(1):e1009155, 2022."
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Cell states beyond transcriptomics: Integrating structural organization and gene expression in hipsc-derived cardiomyocytes",
+      "publisher": "Cell Systems",
+      "releaseDate": "2021",
+      "url": "",
+      "summary": "Kaytlyn A Gerbin, Tanya Grancharova, Rory M Donovan-Maiye, Melissa C Hendershott, Helen G Anderson, Jackson M Brown, Jianxu Chen, Stephanie Q Dinh, Jamie L Gehring, Gregory R Johnson, et al. Cell Systems, 12(6):670–687, 2021."
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
+      "name": "Atlas of transcription factor binding sites from encode dnase hypersensitivity data across 27 tissue types",
+      "publisher": "Cell Reports",
+      "releaseDate": "2020",
+      "url": "",
+      "summary": "Cory C Funk, Alex M Casella, Segun Jung, Matthew A Richards, Alex Rodriguez, Paul Shannon, Rory Donovan-Maiye, Ben Heavner, Kyle Chard, Yukai Xiao, et al. Cell Reports, 32(7), 2020."
+    },
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Systematic testing of belief-propagation estimates for absolute free energies in atomistic peptides and proteins",
+      "publisher": "Journal of Chemical Theory and Computation",
+      "releaseDate": "2017",
+      "url": "",
+      "summary": "Rory M Donovan-Maiye, Christopher J Langmead, and Daniel Zuckerman"
+    },
+    {
+      "name": "Biophysical comparison of atp synthesis mechanisms shows a kinetic advantage for the rotary process",
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "releaseDate": "2016",
+      "url": "",
+      "summary": "Ramu Anandakrishnan, Zining Zhang, Rory Donovan-Maiye, and Daniel M Zuckerman. PNAS, 113(40):11220–11225, 2016."
+    },
+    {
+      "name": "Unbiased rare event sampling in spatial stochastic systems biology models using a weighted ensemble of trajectories",
+      "publisher": "PLoS Computational Biology",
+      "releaseDate": "2016",
+      "url": "",
+      "summary": "Rory M Donovan, Jose-Juan Tapia, Devin P Sullivan, James R Faeder, Robert F Murphy, Markus Dittrich, and Daniel M Zuckerman"
+    },
+    {
+      "name": "Learning mixed graphical models with separate sparsity parameters and stability-based model selection",
+      "publisher": "BMC Genomics",
+      "releaseDate": "2014",
+      "url": "",
+      "summary": "Andrew J Sedgewick, Ivy Shi, Rory M Donovan, and Panatiotis V Benos"
+    },
+    {
+      "name": "Efficient stochastic simulation of chemical kinetics networks using a weighted ensemble of trajectories",
+      "publisher": "The Journal of Chemical Physics",
+      "releaseDate": "2013",
+      "url": "",
+      "summary": "Rory M Donovan, Andrew J Sedgewick, James R Faeder, and Daniel M Zuckerman. The Journal of Chemical Physics, 139(11):115105, 2013."
     }
   ]
 }
