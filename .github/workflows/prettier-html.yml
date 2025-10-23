@@ -1,5 +1,9 @@
 name: Prettify gh-pages
 
+# Disabled automatic triggers. This workflow is manual-only to avoid automatic
+# runs that modify the `gh-pages` branch automatically on events like
+# page_build or pushes. Use the "Run workflow" button in the Actions tab to
+# execute this workflow when you need to prettify the `gh-pages` branch.
 on:
   workflow_dispatch:
 

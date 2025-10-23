@@ -1,18 +1,9 @@
 name: Docker Image CI
 
+# Disabled automatic triggers to avoid image builds on forks. Run manually from
+# the Actions tab ("Run workflow") when you want to build the Docker image.
 on:
-  push:
-    branches:
-      - master
-      - main
-    paths:
-      - ".github/workflows/deploy-image.yml"
-      - "bin/entry_point.sh"
-      - "Dockerfile"
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "package.json"
-      - "package-lock.json"
+  workflow_dispatch:
 
 jobs:
   build:

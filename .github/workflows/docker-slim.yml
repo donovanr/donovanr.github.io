@@ -1,17 +1,11 @@
 name: Docker Slim
 
 #Only trigger, when the build workflow succeeded
+# Disabled automatic triggers — changed to manual dispatch only to avoid
+# running Docker Slim on forks or every push. Use the "Run workflow" button
+# in the Actions tab when you want to execute this workflow.
 on:
-  push:
-    branches:
-      - master
-      - main
-    paths:
-      - ".github/workflows/docker-slim.yml"
-  workflow_run:
-    workflows: ["Docker Image CI"]
-    types:
-      - completed
+  workflow_dispatch:
 
 # on:
 #   push:
