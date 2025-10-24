@@ -4,7 +4,7 @@ export const experiences = [
     time: "2025 - present",
     title: "Research Scientist",
     location: "Seattle, WA",
-    description: "Foundation models for biology and human health.",
+    description: "AI for biology and human health.",
   },
   {
     company: "Novo Nordisk",
@@ -65,12 +65,7 @@ export const skills = [
   {
     title: "Computational Biology",
     description:
-      "Single cell analysis, genomics, systems biology, molecular modeling",
-  },
-  {
-    title: "Technical Skills",
-    description:
-      "Python, PyTorch, TensorFlow, statistical modeling, large-scale data analysis",
+      "Single cell data, genomics, systems biology, molecular modeling, bioimage analysis",
   },
 ];
 
