@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+import { profile } from '@/settings'
+import { publications } from '@/data/cv'
+import ProfilePicture from '@/assets/prof_pic.jpg'
+import { Image } from 'astro:assets'
+import SocialIcons from '@/components/ui/SocialIcons.astro'
+import ArticleList from '@/components/ui/ArticleList.astro'
+
+const { fullName, title, institute } = profile
+---
+
+<Layout>
+	<!-- Hero Section with Bio -->
+	<section class='flex items-center gap-12 border-b pb-12'>
+		<div class='flex-1'>
+			<h1 class='text-4xl font-bold mb-4'>
+				<span class='text-secondary'>{fullName}</span>
+			</h1>
+			<p class='text-xl text-gray-600 mb-4'>{title}{institute ? ` at ${institute}` : ''}</p>
+			<div class='text-lg mb-6 space-y-4'>
+				<p>
+					I work at the <a href="https://allenai.org" class="link link-secondary">Allen Institute for Artificial Intelligence</a> on foundation models for biology and human health.
+				</p>
+				<p>
+					Previously, I was at <a href="https://www.novonordisk-us.com/about/who-we-are.html" class="link link-secondary">Novo Nordisk</a>, training and applying multimodal biological foundation models to extracting knowledge from high dimensional experimental data.
+				</p>
+				<p>
+					Before that, I was a Sr. Modeling Scientist at the <a href="https://www.allencell.org/" class="link link-secondary">Allen Institute for Cell Science</a> and a postdoc at the <a href="https://www.systemsbiology.org/" class="link link-secondary">Institute for Systems Biology</a> with the <a href="https://isbscience.org/people/labs/hood-price-lab/" class="link link-secondary">Hood-Price Lab</a>.
+				</p>
+				<p>
+					I went to grad school at <a href="http://www.compbio.cmu.edu/" class="link link-secondary">CMU & Pitt</a>, where I was advised by <a href="https://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/basic-science-departments/biomedical-engineering/bme-labs/zuckerman-lab/index.cfm" class="link link-secondary">Dan Zuckerman</a>, and worked with <a href="http://www.csb.pitt.edu/Faculty/Faeder/" class="link link-secondary">Jim Faeder</a>, <a href="http://www.cs.cmu.edu/~cjl/" class="link link-secondary">Chris Langmead</a>, <a href="https://bioteam.net/bio/markus-dittrich/" class="link link-secondary">Markus Dittrich</a>, <a href="http://murphylab.web.cmu.edu" class="link link-secondary">Bob Murphy</a>, and <a href="http://www.csb.pitt.edu/Faculty/benos/" class="link link-secondary">Takis Benos</a>.
+				</p>
+			</div>
+			<div class='flex gap-4'>
+				<SocialIcons />
+			</div>
+		</div>
+		<div class='size-72 lg:block hidden'>
+			<Image
+				src={ProfilePicture}
+				alt={fullName}
+				class='w-full h-full mask mask-circle size-44'
+			/>
+		</div>
+	</section>
+
+	<!-- Recent Publications -->
+	<section class='py-12 border-t'>
+		<ArticleList listTitle='Recent Publications' listItems={publications} />
+	</section>
+</Layout>
