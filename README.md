@@ -100,4 +100,5 @@ This is the content of the new blog post. Write your article here using Markdown
 Once you have added the new blog post, it will be automatically included in the blog collection and displayed on the blog page of your website.
 
 ## Deploy
+
 The template provides a workflow to deploy the website on Github pages as a static website.

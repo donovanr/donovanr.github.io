@@ -22,6 +22,7 @@ Pharmacokinetic (PK) properties—particularly half-life and clearance rate—ar
 - Resource-intensive analytical methods
 
 Accurate computational prediction can:
+
 - Prioritize candidates before animal studies
 - Reduce development costs and timelines
 - Minimize animal testing
@@ -82,6 +83,7 @@ Our models demonstrate:
 ## Impact
 
 This work enables:
+
 - **Faster therapeutic development**: Weeks instead of months for PK assessment
 - **Cost reduction**: Fewer expensive animal studies
 - **Ethical improvement**: Reduced animal use in drug development

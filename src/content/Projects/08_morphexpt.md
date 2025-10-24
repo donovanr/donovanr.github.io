@@ -15,12 +15,14 @@ Foundational image / multimodal models are data hungry; to efficiently feed them
 ## Motivation
 
 Modern microscopy generates massive datasets:
+
 - Terabytes of images per experiment
 - Thousands of experimental conditions
 - Multiple imaging modalities and timepoints
 - Diverse cell types and perturbations
 
 Processing this data requires:
+
 - **Quality Control**: Automated detection of imaging artifacts and errors
 - **Standardization**: Consistent preprocessing across experiments
 - **Scalability**: HPC-enabled workflows for large datasets
@@ -149,6 +151,7 @@ morphexpt curate --input data/processed --output data/train \
 ## Impact
 
 This library enables:
+
 - **10-100x speedup** in microscopy data processing
 - **Reduced errors** through automated QC
 - **Better reproducibility** in computational imaging

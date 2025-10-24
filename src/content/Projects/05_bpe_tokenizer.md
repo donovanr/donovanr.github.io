@@ -41,6 +41,7 @@ A specialized BPE (Byte Pair Encoding) tokenizer implemented in Rust with:
 ## SELFIES Representation
 
 SELFIES (Self-Referencing Embedded Strings) is a 100% robust molecular representation:
+
 - Every SELFIES string corresponds to a valid molecule
 - No syntax errors possible
 - Ideal for generative models
@@ -50,6 +51,7 @@ Our tokenizer is specifically optimized for this representation.
 ## Performance
 
 Compared to standard tokenizers:
+
 - **10-100x faster** tokenization speed
 - **30% more compact** vocabularies
 - **Zero invalid** molecular structures after detokenization

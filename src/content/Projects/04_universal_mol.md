@@ -15,12 +15,14 @@ Protein, DNA, RNA, and small molecule language models have strong in-domain perf
 ## Motivation
 
 Current molecular language models are domain-specific:
+
 - Protein LMs trained only on natural amino acids
 - Small molecule models don't understand biological context
 - RNA/DNA models are isolated from protein sequence space
 - Modified residues and non-natural building blocks are poorly represented
 
 This fragmentation limits their utility for:
+
 - Peptide therapeutics with chemical modifications
 - Protein-small molecule conjugates
 - Modified nucleic acids
@@ -53,6 +55,7 @@ We develop a unified molecular language model that:
 ## Impact
 
 A truly universal molecular language model enables:
+
 - Better representation of the full chemical space relevant to biology
 - Improved performance on specialized tasks through transfer learning
 - Novel molecular designs that bridge traditional domain boundaries

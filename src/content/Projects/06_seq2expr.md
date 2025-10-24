@@ -31,6 +31,7 @@ We combine two powerful AI tools:
 2. **Expression Prediction LLM**: Predict expression levels from sequence alone
 
 Our pipeline:
+
 1. Input: Low/non-expressing protein structure or sequence
 2. Generate diverse sequence variants using inverse folding (e.g., ProteinMPNN, ESM-IF)
 3. Score variants with our expression prediction model
@@ -72,6 +73,7 @@ Across multiple challenging cases:
 ## Impact
 
 This approach dramatically reduces the time and cost of protein engineering projects by:
+
 - Eliminating months of screening poorly expressing variants
 - Reducing need for expensive mammalian expression systems
 - Enabling previously intractable projects
