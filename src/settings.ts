@@ -10,7 +10,7 @@ export const profile = {
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-  email: "",
+  email: "roryd@allenai.org",
   linkedin: "https://www.linkedin.com/in/rorymdonovan/",
   x: "",
   github: "https://github.com/donovanr",
@@ -35,6 +35,6 @@ export const template = {
 export const seo = {
   default_title: "Rory Donovan-Maiye",
   default_description:
-    "Research Scientist working on foundation models for biology and human health.",
+    "Research Scientist working on AI for biology and human health.",
   default_image: "/images/astro-academia.png",
 };
