@@ -20,6 +20,7 @@ npm run dev
 ### Profile Settings
 
 Edit `src/settings.ts` to update:
+
 - Your name, title, and institution
 - Social media links
 - SEO settings (site title, description, default image)
@@ -28,6 +29,7 @@ Edit `src/settings.ts` to update:
 ### CV Content
 
 Edit `src/data/cv.ts` to update your:
+
 - Work experience
 - Education history
 - Skills
