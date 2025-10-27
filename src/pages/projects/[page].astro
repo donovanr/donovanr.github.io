@@ -46,18 +46,11 @@ const { page } = Astro.props;
                   </div>
                 )}
                 <div class={project.img ? "md:w-2/3" : "w-full"}>
-                  <div class="flex justify-between items-start mb-2">
-                    <h2 class="card-title text-xl">
-                      <a href={project.slug} class="hover:text-accent">
-                        {project.title}
-                      </a>
-                    </h2>
-                    {project.category && (
-                      <div class="badge badge-accent badge-outline p-4">
-                        {project.category}
-                      </div>
-                    )}
-                  </div>
+                  <h2 class="card-title text-xl mb-2">
+                    <a href={project.slug} class="hover:text-accent">
+                      {project.title}
+                    </a>
+                  </h2>
                   <p class="mt-4">{project.description}</p>
                   <div class="card-actions justify-end mt-4">
                     <a
