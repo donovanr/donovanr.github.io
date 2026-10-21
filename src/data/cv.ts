@@ -2,7 +2,7 @@ export const experiences = [
   {
     company: "Allen Institute for Artificial Intelligence",
     time: "2025 - present",
-    title: "Research Scientist",
+    title: "Senior Research Scientist",
     location: "Seattle, WA",
     description: "AI for biology and human health.",
   },
