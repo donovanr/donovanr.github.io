@@ -2,7 +2,7 @@ export const experiences = [
   {
     company: "Allen Institute for Artificial Intelligence",
     time: "2025 - present",
-    title: "Research Scientist",
+    title: "Senior Research Scientist",
     location: "Seattle, WA",
     description: "AI for biology and human health.",
   },
@@ -70,6 +70,58 @@ export const skills = [
 ];
 
 export const publications = [
+  {
+    title: "Designing Protein Structures from Natural Language",
+    authors:
+      "Joseph Lee, Yanjing Li, Bo Qiang, Gregory Lau, Allyson Ettinger, Noah A. Smith, Rory Donovan-Maiye, David Baker, Hanna Hajishirzi, and Pang Wei Koh",
+    journal: "arXiv preprint",
+    time: "2026",
+    link: "https://arxiv.org/abs/2610.13917",
+    abstract:
+      "Prompteina: all-atom protein structure generation conditioned on natural-language design prompts, with experimentally validated de novo binders to GM2A.",
+  },
+  {
+    title:
+      "LangPert: LLM-Driven Contextual Synthesis for Unseen Perturbation Prediction",
+    authors:
+      "Kaspar Märtens, Marc Boubnovski Martell, Cesar A Prada-Medina, and Rory Donovan-Maiye",
+    journal: "ICLR 2025 Workshop on Machine Learning for Genomics Explorations",
+    time: "2025",
+    link: "https://openreview.net/forum?id=uTderO7iyk",
+    abstract:
+      "LLM-guided kNN aggregation for predicting transcriptional responses to genetic perturbations not seen in training.",
+  },
+  {
+    title:
+      "Query, Don't Train: Privacy-preserving tabular prediction from EHR data via SQL queries",
+    authors:
+      "Josefa Lia Stoisser, Marc Boubnovski Martell, Kaspar Märtens, Lawrence Phillips, Stephen Michael Town, Rory Donovan-Maiye, and Julien Fauqueur",
+    journal: "arXiv preprint",
+    time: "2025",
+    link: "https://arxiv.org/abs/2505.21801",
+    abstract:
+      "LLM-written, privacy-compliant SQL queries over EHR schemas for clinical prediction without training on patient-level records.",
+  },
+  {
+    title: "CellRep: Multichannel image representation learning model",
+    authors: "Lawrence Phillips and Rory Donovan-Maiye",
+    journal: "CVPR 2025 Workshops",
+    time: "2025",
+    link: "https://openaccess.thecvf.com/content/CVPR2025W/CVDD/papers/Phillips_CellRep_A_Multichannel_Image_Representation_Learning_Model_CVPRW_2025_paper.pdf",
+    abstract:
+      "Channel-invariant foundation model for multichannel microscopy that generalizes across cell types, imaging modalities, and channel configurations.",
+  },
+  {
+    title:
+      "SynthPert: Enhancing LLM biological reasoning via synthetic reasoning traces for cellular perturbation prediction",
+    authors:
+      "Lawrence Phillips, Marc Boubnovski Martell, Aditya Misra, Josefa Lia Stoisser, Cesar A Prada-Medina, Rory Donovan-Maiye, and Kaspar Märtens",
+    journal: "arXiv preprint",
+    time: "2025",
+    link: "https://arxiv.org/abs/2509.25346",
+    abstract:
+      "Fine-tuning LLMs on synthetic reasoning traces from frontier models to improve cellular perturbation prediction.",
+  },
   {
     title:
       "Enhancing generative perturbation models with LLM-informed gene embeddings",

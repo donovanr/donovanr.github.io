@@ -1,6 +1,6 @@
 export const profile = {
   fullName: "Rory Donovan-Maiye",
-  title: "Research Scientist",
+  title: "Senior Research Scientist",
   institute: "Allen Institute for Artificial Intelligence",
   author_name: "Rory", // Author name to be highlighted in the papers section
   research_areas: [
@@ -35,6 +35,6 @@ export const template = {
 export const seo = {
   default_title: "Rory Donovan-Maiye",
   default_description:
-    "Research Scientist working on AI for biology and human health.",
+    "Senior Research Scientist working on AI for biology and human health.",
   default_image: "/images/astro-academia.png",
 };
