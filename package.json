@@ -11,22 +11,27 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@astrojs/react": "^4.4.0",
-    "@astrojs/rss": "^4.0.13",
-    "@astrojs/sitemap": "^3.6.0",
-    "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/react": "^7.1.1",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
-    "astro": "^5.15.9",
+    "astro": "^7.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.3.3",
     "theme-change": "^2.5.0"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "daisyui": "^4.12.23",
+    "@tailwindcss/typography": "^0.5.20",
+    "daisyui": "^5.7.50",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1"
+  },
+  "overrides": {
+    "@tailwindcss/typography": {
+      "postcss-selector-parser": "^7.1.6"
+    }
   }
 }
