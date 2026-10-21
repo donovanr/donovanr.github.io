@@ -2,18 +2,16 @@
 import { template } from "../../settings.ts";
 ---
 
-<label class="grid cursor-pointer place-items-center" transition:persist>
+<label class="toggle text-base-content" transition:persist>
   <input
     type="checkbox"
     value={template.darkTheme}
-    class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
+    class="theme-controller"
     data-choose-theme
   />
   <svg
-    class="stroke-base-100 fill-base-100 col-start-1 row-start-1"
+    aria-label="light"
     xmlns="http://www.w3.org/2000/svg"
-    width="14"
-    height="14"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -27,10 +25,8 @@ import { template } from "../../settings.ts";
     ></path>
   </svg>
   <svg
-    class="stroke-base-100 fill-base-100 col-start-2 row-start-1"
+    aria-label="dark"
     xmlns="http://www.w3.org/2000/svg"
-    width="14"
-    height="14"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
